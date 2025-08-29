@@ -1,8 +1,7 @@
 BINARY=wgetgo
 BIN_DIR=bin
-TEST_SCRIPT=./integration/test_e2e.sh
 
-.PHONY: build test integration lint clean
+.PHONY: build lint clean
 
 build:
 	@mkdir -p $(BIN_DIR)
