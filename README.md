@@ -72,7 +72,7 @@ Basic usage:
 bin/wgetgo https://go.dev
 ```
 
-Download with recursion depth 0 (download the page and links within the same domain):
+Download with recursion depth 1 (download the page and links within the same domain):
 
 ```bash
 bin/wgetgo -d 1 https://go.dev
