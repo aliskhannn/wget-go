@@ -3,12 +3,14 @@ package parser
 import (
 	"bytes"
 	"errors"
-	"github.com/aliskhannn/wget-go/internal/crawler"
-	"golang.org/x/net/html"
 	"io"
 	"net/url"
 	"path/filepath"
 	"strings"
+
+	"golang.org/x/net/html"
+
+	"github.com/aliskhannn/wget-go/internal/crawler"
 )
 
 var (

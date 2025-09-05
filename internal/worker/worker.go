@@ -2,11 +2,12 @@ package worker
 
 import (
 	"bytes"
-	"github.com/aliskhannn/wget-go/internal/crawler"
-	"github.com/aliskhannn/wget-go/internal/parser"
 	"log"
 	"net/url"
 	"sync"
+
+	"github.com/aliskhannn/wget-go/internal/crawler"
+	"github.com/aliskhannn/wget-go/internal/parser"
 )
 
 // Job represents a single crawling task with its URL and current recursion depth.
@@ -36,7 +37,7 @@ func New(crawler *crawler.Crawler, baseURL *url.URL, maxWorkers int, wg *sync.Wa
 	}
 }
 
-// Start launches the worker pool and begins processing jobs.
+// Start launches the worker pool and begins processing jobs from.
 // It waits until all workers have finished.
 func (w *Worker) Start() {
 	// Start MaxWorkers worker goroutines.

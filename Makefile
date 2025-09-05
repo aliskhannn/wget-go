@@ -11,6 +11,9 @@ lint:
 	go vet ./...
 	golangci-lint run ./...
 
+format:
+	goimports -local github.com/aliskhannn/wget-go -w .
+
 clean:
 	rm -rf ${BIN_DIR}
 	rm -rf sites

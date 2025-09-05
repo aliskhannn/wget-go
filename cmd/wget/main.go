@@ -2,14 +2,16 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"sync"
+
+	"github.com/spf13/pflag"
+
 	"github.com/aliskhannn/wget-go/internal/config"
 	"github.com/aliskhannn/wget-go/internal/crawler"
 	"github.com/aliskhannn/wget-go/internal/flags"
 	"github.com/aliskhannn/wget-go/internal/parser"
 	"github.com/aliskhannn/wget-go/internal/worker"
-	"github.com/spf13/pflag"
-	"os"
-	"sync"
 )
 
 func main() {

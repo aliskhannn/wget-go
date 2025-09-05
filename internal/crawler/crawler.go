@@ -3,15 +3,17 @@ package crawler
 import (
 	"errors"
 	"fmt"
-	"github.com/aliskhannn/wget-go/internal/fetcher"
-	"github.com/aliskhannn/wget-go/internal/files"
-	"github.com/temoto/robotstxt"
-	"golang.org/x/net/context"
 	"log"
 	"net/http"
 	"net/url"
 	"sync"
 	"time"
+
+	"github.com/temoto/robotstxt"
+	"golang.org/x/net/context"
+
+	"github.com/aliskhannn/wget-go/internal/fetcher"
+	"github.com/aliskhannn/wget-go/internal/files"
 )
 
 // Crawler represents a web crawler with an HTTP client, crawling depth,

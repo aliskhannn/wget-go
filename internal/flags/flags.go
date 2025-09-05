@@ -1,8 +1,9 @@
 package flags
 
 import (
-	"github.com/spf13/pflag"
 	"time"
+
+	"github.com/spf13/pflag"
 )
 
 // Flags holds all command-line options for the program.
